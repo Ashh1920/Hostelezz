@@ -2032,6 +2032,7 @@ export default function Signup() {
                     <div  className="form-group mb-4">
                       <label for="password"  className="sr-only">Password</label>
                       <input type="password" name="password" id="password" ref={passwordRef}  className="form-control" placeholder="***********" required/>
+                      <small className="form-text text-muted">password must be 6 charector</small>
                     </div>
                     <div  className="form-group mb-4">
                       <label for="password"  className="sr-only"> confirm Password</label>

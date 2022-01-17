@@ -64,7 +64,7 @@ class AddProduct extends Component {
                     break;
                 case 'city':
                 errors.city=
-                    value.length< 5
+                    value.length< 0
                         ? 'enter  valid name'
                         : '';
                 break;
@@ -209,7 +209,7 @@ class AddProduct extends Component {
                             <div className="form-row form-group mb-4">
                             <div className="col-md-6">
                                 <input
-                                type="text"
+                                type="number"
                                 placeholder="Enter Hostel Phone"
                                 name="contact" for="contact"
                                 value={contact}
@@ -222,13 +222,13 @@ class AddProduct extends Component {
                             </div>
                             <div className="col-md-6">
                                 <input
-                                type="text"
+                                type="number"
                                 placeholder="Enter Hostel rent per month"
                                 name="price"
                                 value={price}
                                 onChange={this.onInputChange}
                                 className="form-control"
-                                required
+                                required noValidate
                                 />
                                 {errors.price.length > 0 && 
                 <small className='error form-text text-danger'>{errors.price}</small>}
@@ -296,7 +296,7 @@ class AddProduct extends Component {
                                 
                         
                       </div>
-                      <textarea type="text" className="form-control" name="behaviour" value={facilities} onChange={this.onInputChange} placeholder="Insert details from facilities"/>
+                      <textarea type="text" className="form-control" name="behaviour" required value={facilities} onChange={this.onInputChange} placeholder="Insert details from facilities"/>
                         
                             </div>
     
@@ -308,8 +308,8 @@ class AddProduct extends Component {
                     </div>
                   
                     <div className="row" style={{padding:"1%"}}>
-                            <button type="button" className="submit-button btn-secondary btn-rounded waves-effect col" style={{marginRight:"2%"}} onClick={this.handleUplaod}>Upload Image First <i class="fas fa-upload"></i></button>
-                            <button className="submit-button btn-success btn-rounded waves-effect col" >save<i class="far fa-share-square"></i></button>
+                            <button type="button" className=" btn-secondary btn-rounded waves-effect col" style={{marginRight:"2%"}} onClick={this.handleUplaod}>Upload Image First <i class="fas fa-upload"></i></button>
+                            <button type="submit" value="submit" className="submit-button btn-success btn-rounded waves-effect col" >save<i class="far fa-share-square"></i></button>
                     </div>
                     
                        </form>         

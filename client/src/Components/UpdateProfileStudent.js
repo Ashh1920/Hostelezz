@@ -86,6 +86,7 @@ export default function UpdateProfile() {
                 type="password"
                 ref={passwordRef}
                 placeholder="Leave blank to keep the same"
+                id="password-1"
               />
             </Form.Group>
             <Form.Group id="password-confirm">
@@ -94,9 +95,10 @@ export default function UpdateProfile() {
                 type="password"
                 ref={passwordConfirmRef}
                 placeholder="Leave blank to keep the same"
+                id="repassword-1"
               />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button disabled={loading} className="w-100" type="submit" id="submit-btn">
               Update
             </Button>
           </Form>

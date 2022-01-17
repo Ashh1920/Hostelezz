@@ -2021,7 +2021,7 @@ export default function Login() {
               </div>
 
               <p   className="login-card-description">Login to Owner Account</p>
-              {error && <Alert variant="danger">{error}</Alert>}
+              {error && <Alert variant="danger" id="errorMsg">{error}</Alert>}
               <form onSubmit={handleSubmit}>
                   <div  className="form-group">
                     <label for="email"  className="sr-only">Email</label>
@@ -2031,7 +2031,7 @@ export default function Login() {
                     <label for="password"  className="sr-only">Password</label>
                     <input type="password" name="password" id="password" ref={passwordRef}  className="form-control" placeholder="***********" required/>
                   </div>
-                  <Button disabled={loading} className="btn btn-block login-btn mb-4" type="submit">
+                  <Button disabled={loading} className="btn btn-block login-btn mb-4" type="submit" id="submit-btn">
               Log In
             </Button>
 						 

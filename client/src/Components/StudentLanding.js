@@ -58,17 +58,17 @@ class Landing extends Component {
                     <a className="navbar-brand" href="/landing"><span className="logo_main">Logo</span><span className="logo_main">Here</span></a>
                     <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
-                        <a className="nav-link" href="/StudentLanding">Home</a>
+                        <a className="nav-link" href="/StudentLanding" id="Home">Home</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="/update-profile-student">Update Profile</a>
+                    <a className="nav-link" href="/update-profile-student" id="UpdatePro">Update Profile</a>
                   </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/ContactStudent">Contact</a>
                     </li>
 
                     <li className="nav-item">
-                        <a className="nav-link logout_btn btn-sm btn btn-danger py-1" onClick={this.logout} href="/">Log Out</a>
+                        <a className="nav-link logout_btn btn-sm btn btn-danger py-1" onClick={this.logout} href="/" id="LogoutBtn" id="logout">Log Out</a>
                     </li>
                     </ul>
                 </div>
@@ -103,7 +103,7 @@ class Landing extends Component {
                   </div>
                   <div className="col-md-5 search_col_main">
                     <div className="main_search_div d-flex align-items-center">
-                      <input type="search" className="form-control" placeholder="Location" value={this.search}  onChange={this.handleInput}></input>
+                      <input id="search" type="search" className="form-control" placeholder="Location" value={this.search}  onChange={this.handleInput}></input>
                       <i class="fas fa-search-location"></i>
                     </div>
                   </div>

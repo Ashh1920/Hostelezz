@@ -2035,9 +2035,9 @@ export default function Signup() {
                     </div>
                     <div  className="form-group mb-4">
                       <label for="password"  className="sr-only"> confirm Password</label>
-                      <input type="password" name="password" id="password" ref={passwordConfirmRef}  className="form-control" placeholder="***********" required/>
+                      <input type="password" name="repassword" id="repassword" ref={passwordConfirmRef}  className="form-control" placeholder="***********" required/>
                     </div>
-                    <Button disabled={loading} className="btn btn-block login-btn mb-4" type="submit" >
+                    <Button disabled={loading} className="btn btn-block login-btn mb-4" type="submit" id="submit-btn">
               Sign Up
             </Button>
                
